@@ -1,0 +1,48 @@
+{
+	"name": "@honestjs/filters",
+	"version": "0.0.0",
+	"description": "Collection of filters without dependencies for HonestJS framework",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"clean": "rm -rf dist",
+		"type-check": "tsc --noEmit"
+	},
+	"keywords": [
+		"honestjs",
+		"hono",
+		"nestjs",
+		"filter"
+	],
+	"author": "Orkhan Karimov <karimovok1@gmail.com> (https://github.com/kerimovok)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/honestjs/filters.git",
+		"directory": "packages/filters"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"hono": "^4.8.4",
+		"honestjs": "^0.1.4",
+		"http-essentials": "^1.3.1"
+	},
+	"peerDependencies": {
+		"hono": "^4.8.4",
+		"honestjs": "^0.1.4",
+		"http-essentials": "^1.3.1"
+	}
+}
