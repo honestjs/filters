@@ -39,14 +39,13 @@ export class ZodValidationFilter implements IFilter {
 			}))
 			;(validationError as any).errors = errors
 
-			return context.json(
-				createErrorResponse(validationError, context, {
-					status: 400,
-					title: 'Validation failed',
-					code: 'VALIDATION_ERROR',
-					additionalDetails: { errors }
-				})
-			)
+			const { response, status } = createErrorResponse(validationError, context, {
+				status: 400,
+				title: 'Validation failed',
+				code: 'VALIDATION_ERROR',
+				additionalDetails: { errors }
+			})
+			return context.json(response, status)
 		}
 
 		return undefined

@@ -83,57 +83,52 @@ export class PrismaExceptionFilter implements IFilter {
 					statusCode = 500
 			}
 
-			return context.json(
-				createErrorResponse(exception, context, {
-					status: statusCode,
-					title: message,
-					code: code
-				})
-			)
+			const { response, status } = createErrorResponse(exception, context, {
+				status: statusCode,
+				title: message,
+				code: code
+			})
+			return context.json(response, status)
 		}
 
 		// Handle PrismaClientValidationError
 		if (exception instanceof PrismaClientValidationError) {
-			return context.json(
-				createErrorResponse(exception, context, {
-					status: 400,
-					title: 'Invalid data provided',
-					code: 'VALIDATION_ERROR'
-				})
-			)
+			const { response, status } = createErrorResponse(exception, context, {
+				status: 400,
+				title: 'Invalid data provided',
+				code: 'VALIDATION_ERROR'
+			})
+			return context.json(response, status)
 		}
 
 		// Handle PrismaClientInitializationError
 		if (exception instanceof PrismaClientInitializationError) {
-			return context.json(
-				createErrorResponse(exception, context, {
-					status: 500,
-					title: 'Database connection failed',
-					code: 'DATABASE_CONNECTION_ERROR'
-				})
-			)
+			const { response, status } = createErrorResponse(exception, context, {
+				status: 500,
+				title: 'Database connection failed',
+				code: 'DATABASE_CONNECTION_ERROR'
+			})
+			return context.json(response, status)
 		}
 
 		// Handle PrismaClientUnknownRequestError
 		if (exception instanceof PrismaClientUnknownRequestError) {
-			return context.json(
-				createErrorResponse(exception, context, {
-					status: 500,
-					title: 'An unknown database error occurred',
-					code: 'UNKNOWN_DATABASE_ERROR'
-				})
-			)
+			const { response, status } = createErrorResponse(exception, context, {
+				status: 500,
+				title: 'An unknown database error occurred',
+				code: 'UNKNOWN_DATABASE_ERROR'
+			})
+			return context.json(response, status)
 		}
 
 		// Handle PrismaClientRustPanicError
 		if (exception instanceof PrismaClientRustPanicError) {
-			return context.json(
-				createErrorResponse(exception, context, {
-					status: 500,
-					title: 'Internal server error. Please try again later.',
-					code: 'PRISMA_PANIC_ERROR'
-				})
-			)
+			const { response, status } = createErrorResponse(exception, context, {
+				status: 500,
+				title: 'Internal server error. Please try again later.',
+				code: 'PRISMA_PANIC_ERROR'
+			})
+			return context.json(response, status)
 		}
 
 		return undefined
