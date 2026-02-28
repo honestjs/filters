@@ -34,15 +34,14 @@
 		"url": "https://github.com/honestjs/filters.git",
 		"directory": "packages/prisma-exception-filter"
 	},
-	"dependencies": {},
 	"devDependencies": {
-		"hono": "^4.8.4",
-		"honestjs": "^0.1.4",
-		"@prisma/client": "^6.11.1"
+		"@prisma/client": "^6.19.2",
+		"honestjs": "^0.1.6",
+		"hono": "^4.12.3"
 	},
 	"peerDependencies": {
-		"hono": "^4.8.4",
+		"@prisma/client": "^6.11.1",
 		"honestjs": "^0.1.4",
-		"@prisma/client": "^6.11.1"
+		"hono": "^4.8.4"
 	}
 }
