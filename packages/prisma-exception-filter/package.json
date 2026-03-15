@@ -36,12 +36,12 @@
 	},
 	"devDependencies": {
 		"@prisma/client": "^6.19.2",
-		"honestjs": "^0.1.6",
+		"honestjs": "^0.1.11",
 		"hono": "^4.12.3"
 	},
 	"peerDependencies": {
 		"@prisma/client": "^6.11.1",
-		"honestjs": "^0.1.4",
+		"honestjs": "^0.1.11",
 		"hono": "^4.8.4"
 	}
 }

@@ -8,5 +8,6 @@ export class HttpExceptionFilter implements IFilter {
 			const { response, status } = createErrorResponse(exception, context)
 			return context.json(response, status)
 		}
+		return undefined
 	}
 }
