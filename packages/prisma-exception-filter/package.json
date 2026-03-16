@@ -42,6 +42,6 @@
 	"peerDependencies": {
 		"@prisma/client": "^6.11.1",
 		"honestjs": "^0.1.11",
-		"hono": "^4.8.4"
+		"hono": "^4.12.8"
 	}
 }
