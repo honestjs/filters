@@ -35,7 +35,7 @@
 		"directory": "packages/zod-exception-filter"
 	},
 	"devDependencies": {
-		"honestjs": "^0.1.11",
+		"honestjs": "^0.1.13",
 		"hono": "^4.12.8",
 		"zod": "^4.3.6"
 	},
