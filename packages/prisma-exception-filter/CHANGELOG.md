@@ -1,5 +1,11 @@
 # @honestjs/prisma-exception-filter
 
+## 1.2.1
+
+### Patch Changes
+
+- c72bf30: Update honestjs to version 0.1.13
+
 ## 1.2.0
 
 ### Minor Changes
