@@ -1,6 +1,6 @@
 {
 	"name": "@honestjs/prisma-exception-filter",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "Prisma exception filter for HonestJS framework",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
