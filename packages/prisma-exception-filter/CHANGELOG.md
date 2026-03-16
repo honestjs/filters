@@ -1,5 +1,11 @@
 # @honestjs/prisma-exception-filter
 
+## 1.2.0
+
+### Minor Changes
+
+- 4198e3b: Update dependencies and add testing setup.
+
 ## 1.1.1
 
 ### Patch Changes
