@@ -1,5 +1,11 @@
 # @honestjs/filters
 
+## 1.2.2
+
+### Patch Changes
+
+- f571eb2: Update hono dependency to version 4.12.8
+
 ## 1.2.1
 
 ### Patch Changes
