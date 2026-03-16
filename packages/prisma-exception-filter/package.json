@@ -20,7 +20,9 @@
 		"dev": "tsup --watch",
 		"clean": "rm -rf dist",
 		"type-check": "tsc --noEmit",
-		"lint": "prettier --check ."
+		"lint": "prettier --check .",
+		"test": "vitest run",
+		"prepack": "pnpm run build"
 	},
 	"keywords": [
 		"honestjs",
@@ -38,7 +40,8 @@
 	"devDependencies": {
 		"@prisma/client": "^6.19.2",
 		"honestjs": "^0.1.14",
-		"hono": "^4.12.8"
+		"hono": "^4.12.8",
+		"vitest": "^4.1.0"
 	},
 	"peerDependencies": {
 		"@prisma/client": "^6.11.1",

@@ -21,7 +21,8 @@
 		"clean": "rm -rf dist",
 		"type-check": "tsc --noEmit",
 		"lint": "prettier --check .",
-		"test": "vitest run"
+		"test": "vitest run",
+		"prepack": "pnpm run build"
 	},
 	"keywords": [
 		"honestjs",
