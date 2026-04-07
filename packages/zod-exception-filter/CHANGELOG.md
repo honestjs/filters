@@ -1,5 +1,11 @@
 # @honestjs/zod-exception-filter
 
+## 1.2.3
+
+### Patch Changes
+
+- 32b88be: Update dependencies
+
 ## 1.2.2
 
 ### Patch Changes
