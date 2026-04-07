@@ -38,8 +38,8 @@
 		"directory": "packages/filters"
 	},
 	"devDependencies": {
-		"honestjs": "^0.1.14",
-		"hono": "^4.12.8",
+		"honestjs": "^0.1.22",
+		"hono": "^4.12.12",
 		"http-essentials": "^1.4.0"
 	},
 	"peerDependencies": {
